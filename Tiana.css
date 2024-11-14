@@ -1,0 +1,649 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar-log img {
+    width: 7%;
+    display: block;
+    object-fit: cover;
+}
+
+img{
+    width: 50%;
+}
+
+.Navbar-item{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    width: 95%;
+    height: 80px;
+    border-radius: 13px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9999;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 10px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav li {
+    padding-right: 10px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+.nav li :hover{
+    background-color: #01959a;
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Show Nav on Mobile */
+.nav.active {
+    left: 0;
+    opacity: 1;
+}
+
+/* Close Button Styles */
+.menu-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* Open Menu Button Styles */
+.menu-open-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+/************** END OF NAVBAR **********/
+
+
+.Hero {
+    position: relative;
+    top: 7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+}
+
+.header_left {
+    padding: 1rem 2rem 0 2rem;
+      padding-bottom: 2rem;
+}
+
+.header_left h1{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.header_left p{
+    line-height: 2.5;
+    padding-bottom: 2rem;
+}
+
+.btn{
+    padding: 1rem 2rem;
+    background: #01959a;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.btn:hover{
+    color: #222;
+}
+
+.header_left a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.header_right img{
+    width: 100%;
+    height: auto;
+}
+
+
+/************** END OF HERO **********/
+
+.our-service {
+    margin: 4rem 0 0 0;
+}
+
+.other_service{
+   padding: 9rem 2rem;
+   z-index: 9999;
+}
+
+.other_service h1{
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.sub-service {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding-top: 2rem;
+}
+
+.service img{
+    width: 95%;
+    height: 70%;
+    border-radius: 17px;
+    object-fit: cover;
+}
+
+.service h4{
+ font-size: 1.6rem;
+ font-weight: 600;
+}
+
+.service p{
+    font-size: 1rem;
+    padding: .2rem;
+    line-height: 2;
+    color: #615d5d;
+}
+
+/************** END OF SERVICES **********/
+
+
+.knownledge{
+    background: #e4dede;
+    padding: 1rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.righ h1{
+    padding: 3rem 2rem 0 0;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.left p{
+    padding-top: 4rem;
+    font-size: 1.2rem;
+}
+
+.bnt-primary {
+    width: 50%;
+    border-radius: 16px;
+    text-decoration: none;
+}
+
+/************** END OF KNOWNLEDGE **********/
+
+
+
+.course{
+    text-align: center;
+    padding: 2rem 4rem;
+}
+
+.course h1{
+    padding-bottom: 2rem;
+}
+
+.our-course{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 20px;
+}
+
+.sub_course{
+    justify-content: center;
+    text-align: start;
+    padding: 1rem;
+    line-height: 2.1;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    margin: 0 10px;
+}
+
+.IELTS{
+    color: red;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.TOEFL{
+    color: blue;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.SAT {
+    color: #222;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.sub_course h4{
+    text-align: center;
+}
+
+.sub_course p{
+    font-size: 1rem;
+    color: #494646;
+}
+
+/************** END OF COURSE **********/
+
+.client{
+    text-align: center;
+    padding: 2rem 4rem;
+    background: #e4dede;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+.client h2{
+    padding: 1rem 0 2rem 0;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.client_container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+}
+
+.cliennt_con{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.client img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 17px;
+    object-fit: cover; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+}
+
+/************** END OF CLIENT **********/
+
+
+
+
+.message{
+   padding: 2rem 0 4rem 0;
+}
+
+.sub_mess{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.sub_mess img{
+   width: 90%;
+   height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.mess-right h3{
+    font-size: 2rem;
+}
+
+/************** END OF MESSAGE **********/
+
+
+
+
+.form_name{
+    display: flex;
+    align-items: center;
+}
+
+.form_name, input {
+    width: 100%;
+    padding: 1rem 0 .8rem 0 ;
+    gap: 20px;
+    outline: none;
+}
+
+input {
+    padding: .5rem;
+}
+
+
+ textarea {
+    width: 100%;
+    padding: .5rem;
+    margin-bottom: 2rem;
+    outline: none;
+}
+
+/************** END OF FORM **********/
+
+
+.sub_comment{
+    padding: 4rem 6rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 20px;
+    background: #e4dede;
+    transition: 2s ease-in-out;
+}
+
+.testimoney{ 
+    padding: 4rem 1rem;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.testimoney:hover{
+    border: 1px solid rgb(97, 97, 104);
+} 
+
+.testimoney img{
+   width: 20%;
+   border-radius: 50%;
+   object-fit: cover;
+}
+
+.testimoney h3{
+    font-size: 1rem;
+    line-height: 2;
+    padding-bottom: 1rem;
+    color: #494646;
+}
+
+/************** END OF TESTIMONEY **********/
+
+
+
+
+footer{
+    height: 70vh;
+}
+
+.foot {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    padding: 6rem;
+    flex-wrap: wrap;
+    color: #222;
+}
+
+.foot li {
+    list-style: none;
+    text-decoration: none;
+    color: #222;
+}
+
+.footer_2 ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: #222;
+}
+
+.foote ul li {
+    padding: 0 0 1rem 0;
+}
+
+
+.contact li i{
+    display: flex;
+    padding: 1rem 0 .4rem 0 ;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.footer_social{
+    display: flex;
+   gap: 20px;
+   padding-top: 1rem;
+}
+
+.footer_social li a {
+    color: blue;
+    font-size: 2rem;
+}
+
+/************** END OF FOOTER **********/
+
+
+@media screen and (max-width: 850px) {
+
+    .navbar-log img {
+        width: 15%;
+        display: block;
+        object-fit: cover;
+    }
+
+
+    .Navbar-item{
+        z-index: 99;
+        justify-content: space-between;
+    }
+
+     .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background: #fff;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        opacity: 0;
+        align-items: stretch;
+        text-align: center;
+        padding: 80px 0 30px 0;
+        margin: 0;
+        transition: 0.2s ease-in-out;
+        border-radius: 13px;
+        z-index: 99;
+    } 
+
+    .nav li a{
+        display: block;
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 2rem 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .menu-open-btn {
+        display: block;
+    }
+/************** END OF NAVBAR **********/
+
+    .Hero {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /************** END OF HERO **********/
+
+
+
+.other_service{
+    padding: 7rem 1rem;
+    align-items: center;
+}
+
+
+.sub-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service img{
+    width: 100%;
+}
+
+/************** END OF SERVICES **********/
+
+    .sub_mess{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .sub_mess img{
+        width: 100%;
+        padding-top: 1rem;
+     }
+
+/************** END OF MESSAGE **********/
+
+
+    .knownledge{
+        padding: 1rem 4rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .righ h1{
+        padding: 1rem 0;
+        font-size: 1.2rem;
+    }
+    
+    .left p{
+        padding: 1rem 0 1rem 0;
+        font-size: .9rem;
+    }
+    /************** END OF KNOWLEDGE **********/    
+    .client_container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .client_image img{
+        width: 100%;
+        height: 80%;
+    }
+
+    .client h2{
+        padding: 1rem 0 1rem 0;
+        font-size: 1.5rem;
+    }
+/************** END OF CLIENT **********/
+
+.course{
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+    .our-course{
+       display: flex;
+       flex-direction: column;
+       padding: 0;
+    }
+
+    .sub_course p{
+        font-size: 1rem;
+    }
+/************** END OF COURSE **********/
+
+    .message{
+        padding-top: 1rem;
+    }
+
+    .message, .sub_comment{
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .mess-right h3{
+        font-size: 1.7rem;
+        padding: 1rem 0;
+    }
+/************** END OF MESSAGE **********/
+
+
+     .form_name, input {
+        display: grid;
+       grid-template-rows: 1fr;
+    }
+
+    textarea {
+      margin-bottom: 1rem;
+    }
+
+    /************** END OF FORM **********/
+
+
+.foot {
+    display: grid;
+  grid-template-columns: repeat(2, auto);
+  padding: 2rem 1rem;
+}
+
+.footer_3{
+    padding-top: 2rem;
+}
+/************** END OF FOOTER **********/
+
+.btn{
+    padding: 1rem;
+    width: 60%;
+    text-align: center;
+}
+
+.bnt-primary {
+    width: 60%;
+}
+}
